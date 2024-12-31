@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Gallery from './Gallery.jsx';
+
 
 // Set Current Hour
 // Manually set a const variable called currentHour to a specific time (e.g., 18, which is 6 PM).
@@ -68,8 +70,7 @@ export default function MyApp() {
         <div className="side">
 
         <h5>Photo of me:</h5>
-
-        <div className="imgBox">Image</div>
+        {/* <Gallery /> */}
           <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
           <h3>More Text</h3>
           <p>Lorem ipsum dolor sit ame.</p>
@@ -83,21 +84,6 @@ export default function MyApp() {
 
       </div>
       </body>
-{/* 
-      <div className="row">
-        <div className="side"> 
-           <h5>Photo of me:</h5>
-          <div className="imgBox" style="height:200px;">Image</div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-          <h3>More Text</h3>
-          <p>Lorem ipsum dolor sit ame.</p>
-          <div className="imgBoxShort">Short Image</div>
-          <br />
-          <div className="imgBoxShort" style="height:60px;">Short Image</div>
-          <br />
-          <div className="imgBoxShort" style="height:60px;">Short Image</div>
-        </div>
-      </div> */}
 </>
       
     )
