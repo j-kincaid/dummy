@@ -8,7 +8,7 @@ const Hero = () => {
       <div className='image'>
         <img src={profileImage} alt='Jessica Kincaid' />
         </div>
-        <div>
+        <div className='hero-text'>
             <h1>Jessica Kincaid</h1>
             <p>Full Stack Developer</p>
             <p>Overland Park, KS</p>

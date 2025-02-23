@@ -1,19 +1,7 @@
 /* From App.css
 
 Color palette
-
-green #CEEA7B;
-lilac #D5D8F0;
-wheat #F3E5B9;
-light pink #ECE7E7;
-dusty pink #EZDFEO;
-taupe #DDDFD9;
-
-*/
-
-/* Color palette
-
-{"Dark green":"18281f","Olivine":"bbcb79","Eerie black":"211f15","Seal brown":"462310","Feldgrau":"3e4b3d"} 
+"Dark green":"18281f","Olivine":"bbcb79","Eerie black":"211f15","Seal brown":"462310","Feldgrau":"3e4b3d"
 
 */
 
@@ -37,29 +25,29 @@ taupe #DDDFD9;
 
 */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Young+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
 /* Universal Presets */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Georama", sans-serif;
+  font-weight: lighter;
 }
+
 
 /* Global CSS Variables */
 :root {
-  --body-bg: #fef2dc;
+  --body-bg: #18281f;
   --header-text: #fef7e9;
-  --body-text: #050505;
+  --body-text: rgba(255, 255, 255, 0.9);
   --headings: #b65949;
   --primary: #006361;
   --primary-shadow: #0d4645;
   --secondary: #d8a25a;
   --secondary-shadow: #ab8147;
   --white: #ffffff;
-
-  font-family: 'Young Serif', serif;
-  text-align: center;
+  --nav-height: 40px;
   scroll-behavior: smooth;
 }
 
@@ -138,8 +126,8 @@ img {
 /* UTILITY CLASSES */
 
 .btn {
+  margin-top: 0.75rem;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
   color: var(--header-text);
   background-color: var(--secondary);
   box-shadow: 0 2px var(--secondary-shadow);
@@ -150,21 +138,12 @@ img {
   background-color: var(--secondary-shadow);
 }
 
-.divider {
-  position: relative;
-  margin-bottom: 6rem;
-}
-
-.divider:after {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: var(--primary);
-  position: absolute;
-  bottom: -3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  rotate: 10deg;
+div.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
 }
 
 .body-text,
