@@ -1,17 +1,22 @@
+import React from 'react';
+import About from './components/About';
+import Footer from './components/Footer';
 import Header from './components/Header';
-import ProfileImg from './components/ProfileImg';
-import './index.css';
+import Hero from './components/Hero';
+import Projects from './components/Projects';
 
-
-function App() {
+const App = () => {
   return (
     <div>
       <Header />
-        <ProfileImg />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+      </main>
+      <Footer />
     </div>
-
-  );
-};
-
+  )
+}
 
 export default App;

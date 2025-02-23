@@ -1,29 +1,33 @@
 import React from 'react';
-import './index.css'
+import { useState } from 'react';
+import menu from '../assets/open_menu.svg';
+import close from '../assets/close_menu.svg';
 
 const Header = () => {
+  const [ isOpen, setIsOpen ] = React.useState(false);
   return (
     <header>
-    <div className='hero-image'></div>
-        <span>Jessica Kincaid</span>
-
-  <nav className='navbar'>
-  <ul>
-    <li>
-    <a href="#">Fine Art</a>
-    </li>
-    <li>
-    <a href="#">Development</a>
-    </li>
-    <li>
-    <a href="#">Resume</a>
-    </li>
-    <li>
-    <a href="#">Contact</a>
-    </li>
-    </ul>
-  </nav>
-
+      <span>Jessica Kincaid</span>
+      <button className='menu-btn'
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Navigation-menu"
+        aria-expanded={isOpen}
+        >
+        <img src={isOpen? close: menu} alt='menu' />
+      </button> 
+      <nav className={`nav ${isOpen ? 'open' : ''}`}>
+        <ul>
+          <li>
+            <a href="#fine-art">About</a>
+          </li>
+          <li>
+            <a href="#development">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }
