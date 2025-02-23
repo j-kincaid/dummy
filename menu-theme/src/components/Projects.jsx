@@ -10,25 +10,29 @@ const projectList = [
         id: 1,
         title: 'Fine Art',
         image: fineArt,
+        description: 'Fine Art Portfolio',
         deployed: "https://j-kincaid.github.io/Open_studio/"
     },
     {
         id: 2,
         title: 'Kitten Saga',
         image: kitten,
+        description: 'Kitten Saga is a nonlinear story/game created with Twine.',
         deployed: 'https://j-kincaid.github.io/KittenSaga.html'
     },
     {
         id: 3,
         title: 'MneMonocle',
         image: MneMonocle,
+        description: 'MneMonocle is a A new, imaginary, augmented reality, wearable mnemonic “device”.',
         deployed: 'https://j-kincaid.github.io/emerging-tech/'
     },
     {
         id: 4,
         title: 'Developer Internship, Dimensional Innovations, Summer 2023',
         image: Menorah,
-        deployed: 'https://deployed.com'
+        description: 'During my time as a Developer Intern at Dimensional Innovations I developed a web application in Vue and Electron that went on display in the Legacy Hall permanent installation at Menorah Medical Center in Leawood, Kansas.',
+        deployed: 'https://dimin.com/di-internship-program'
     }
 ];
 

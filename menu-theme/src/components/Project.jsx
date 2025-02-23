@@ -9,8 +9,9 @@ const Project = ({ data, reverse }) => {
         </div>
         <div className='content'>
             <h3>{data.title}</h3>
+            <p>{data.description}</p>
             </div>
-      <a href={data.deployed} target='_blank' rel='noopener noreferrer'>View Project</a>
+      <a href={data.deployed} target='_blank' rel='noopener noreferrer'>View more...</a>
     </article>
   );
 };
